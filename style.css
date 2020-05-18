@@ -71,7 +71,7 @@ body{
 
 /** Img header **/
 .img-header{
-    background: url(../src/img/header.jpg);
+    background: url(img/header.jpg);
     background-attachment: fixed;       /**sirve para hacer un efecto 'Parallax'**/
     background-position: center;
     background-size: cover;
