@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yoga-Life</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <!--Style-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
@@ -35,6 +37,7 @@
         <figure class="img-header"></figure>
     </header>
     <main>
+        <div class="titulo-a">Sobre Nosotros</div>
         <!--Info-->
         <section class="info">
             <div class="left-info">
@@ -52,32 +55,56 @@
         </section>
         <!--Testimonios-->
         <section class="testimonies-section">
-            <div class="testimonies">
-                <div class="img-people"><img src="img/testimonies-1.jpg"></div>
-                <div class="text-people">
-                    <h3>Carlos Zoto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptates recusandae autem dolorem nisi ab eius dolores natus corrupti at maxime consequatur beatae eligendi possimus atque! Optio velit laborum quaerat ex nesciunt commodi laboriosam accusantium, quasi consequuntur asperiores quia recusandae id harum nemo quibusdam culpa, incidunt sequi corporis deserunt ipsa?</p>
-                </div>
-            </div>
-            <div class="testimonies">
-                <div class="img-people"><img src="img/testimonies-2.jpg"></div>
-                <div class="text-people">
-                    <h3>Belén Rueda</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptates recusandae autem dolorem nisi ab eius dolores natus corrupti at maxime consequatur beatae eligendi possimus atque! Optio velit laborum quaerat ex nesciunt commodi laboriosam accusantium, quasi consequuntur asperiores quia recusandae id harum nemo quibusdam culpa, incidunt sequi corporis deserunt ipsa?</p>
-                </div>
-            </div>
-            <div class="testimonies">
-                <div class="img-people"><img src="img/testimonies-3.jpg"></div>
-                <div class="text-people">
-                    <h3>Sara Montes</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptates recusandae autem dolorem nisi ab eius dolores natus corrupti at maxime consequatur beatae eligendi possimus atque! Optio velit laborum quaerat ex nesciunt commodi laboriosam accusantium, quasi consequuntur asperiores quia recusandae id harum nemo quibusdam culpa, incidunt sequi corporis deserunt ipsa?</p>
-                </div>
-            </div>
-            <div class="testimonies">
-                <div class="img-people"><img src="img/testimonies-4.jpg"></div>
-                <div class="text-people">
-                    <h3>luis Muñoz</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptates recusandae autem dolorem nisi ab eius dolores natus corrupti at maxime consequatur beatae eligendi possimus atque! Optio velit laborum quaerat ex nesciunt commodi laboriosam accusantium, quasi consequuntur asperiores quia recusandae id harum nemo quibusdam culpa, incidunt sequi corporis deserunt ipsa?</p>
+            <div class="titulo-testimonios">Testimonios</div>
+            <div class="slider-area">
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="img-area">
+                                <img class="d-block w-100" src="img/testimonies-1.jpg" alt="First slide">
+                              </div>
+                            <div class="carousel-caption ">
+                                <h3>Roberto García</h3>
+                                <h4>Doctor</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error maxime nulla dignissimos dolore suscipit consequuntur, rem ipsa obcaecati, aspernatur facilis tenetur possimus esse vitae.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="img-area">
+                                <img class="d-block w-100" src="img/testimonies-4.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-caption ">
+                                <h3>Stefanía Gúzman</h3>
+                                <h4>Ejecutiva</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error maxime nulla dignissimos dolore suscipit consequuntur, rem ipsa obcaecati, aspernatur facilis tenetur possimus esse vitae.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="img-area">
+                                <img class="d-block w-100" src="img/testimonies-3.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-caption ">
+                                <h3>Beatriz Gómez</h3>
+                                <h4>Policía</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error maxime nulla dignissimos dolore suscipit consequuntur, rem ipsa obcaecati, aspernatur facilis tenetur possimus esse vitae.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                 </div>
             </div>
         </section>
@@ -89,5 +116,7 @@
 
     <!--Script-->
     <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
